@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>About Me</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#">About Me</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Quizzes And Activities</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About Me</a>
+                <a href="">Skills</a>
+                <a href="">Quizzes And Activities</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                    <img src="lallalalala.jpg" alt="my profile pic">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Irus Dave</span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Good day, I am Irus Dave T. Gonzales, A 3rd year BSIT student in Cavite State University - Silang Campus. I am also a studnet-athlete representing CVSU silang for the past 3 years.</p>
+                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="#" ><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                        <button>Introduction about me</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-images">
+            <p>I am a passionate student-athlete currently playing basketball for Cavite State University – Silang Campus. Being part of the team has helped me develop discipline, leadership, and a strong sense of teamwork. Balancing my academic responsibilities with the demands of training and competition has taught me how to manage my time effectively and stay committed to my goals. Representing CVSU-Silang both on and off the court motivates me to continuously improve and give my best in everything I do. </p>
+            <img src="888.jpg" alt="Quiz 1 Score" class="about-img">
+            <img src="me.jpg" alt="Quiz 2 Score" class="about-img">
+            <img src="puli.jpg" alt="Quiz 2 Score" class="about-img">
+            <img src="abat.jpg" alt="Quiz 2 Score" class="about-img">
+        </section>
+          
+          <section id="skills">
+            <h2>Skills</h2> 
+            <div class="prog-images">
+                <img src="css.png" alt="Programming Languages" class="prog-img">
+                <img src="html.png" alt="Programming Languages" class="prog-img">
+                <img src="phyton.png" alt="Programming Languages" class="prog-img">
+                <img src="java.png" alt="Programming Languages" class="prog-img">
+          </section>
+          
+          <section id="hobbies">
+            <h2>Quizzes and Activities</h2>
+            <p>My compilation of our Activities</p>
+            <div class="quiz-images">
+                <img src="quiz1.jfif" alt="Quiz 1 Score" class="quiz-img">
+                <img src="quiz2.jfif" alt="Quiz 2 Score" class="quiz-img">
+                <img src="midterms.jfif" alt="Quiz 1 Score" class="quiz-img">
+            </div>
+        </section>
+    </div>
+
+          </section>
+</body>
+</html>
